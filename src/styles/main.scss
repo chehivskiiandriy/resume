@@ -1,0 +1,664 @@
+@import "../../node_modules/magnific-popup/dist/magnific-popup";
+
+@font-face {
+  font-family: "RobotoLight";
+  src: url('../fonts/Roboto-Light.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoRegular";
+  src: url('../fonts/Roboto-Regular.ttf') format("truetype");
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f9f9f9;
+  font-family: RobotoLight, sans-serif;
+}
+
+html {
+  @media (min-width: 1900px){
+    font-size: 1.25rem;
+  }
+
+  @media (min-width: 1450px) and (max-width: 1899px){
+    font-size: 1.2rem;
+  }
+
+  @media (min-width: 1300px) and (max-width: 1449px){
+    font-size: 1rem;
+  }
+
+  @media (min-width: 1000px) and (max-width: 1299px) {
+    font-size: 14px;
+  }
+
+  @media (min-width: 700px) and (max-width: 999px) {
+    font-size: 12px;
+  }
+
+  @media (min-width: 500px) and (max-width: 699px) {
+    font-size: 12px;
+  }
+
+  @media (max-width: 499px) {
+    font-size: 10px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.mfp-bg {
+  height: 101%;
+}
+
+.ownBorder {
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 24px;
+    height: calc(100% - 24px);
+    border-left: 2px solid #ccc;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: 10px;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: #ccc;
+  }
+
+  @media (min-width: 1450px){
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 30px;
+      height: calc(100% - 30px);
+      border-left: 3px solid #ccc;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: -3px;
+      top: 10px;
+      height: 9px;
+      width: 9px;
+      border-radius: 50%;
+      background-color: #ccc;
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    &:after {
+      left: -1px;
+      height: 4px;
+      width: 4px;
+    }
+  }
+}
+
+.container {
+  margin: 0 6rem;
+
+  @media (min-width: 701px) and (max-width: 1100px) {
+    margin: 0 4rem;
+  }
+
+  @media screen and (max-width: 700px) {
+    margin: 0 2rem;
+  }
+}
+
+.header {
+  padding-top: 3.125rem;
+
+  @media screen and (orientation: portrait) and (max-width: 850px) {
+    height: 60vh !important;
+  }
+
+  @media screen and (orientation: landscape) and (max-width: 750px) {
+    height: 100vh !important;
+  }
+
+
+  .container {
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    grid-gap: 6.25rem;
+    color: #fff;
+
+    @media screen and (max-width: 850px) {
+      grid-template-columns: 1fr;
+    }
+
+    .myPhoto {
+      border: 1px dashed #eee;
+      border-radius: 0.625rem;
+      box-shadow: 0 0 0.3125rem #ccc;
+      background-color: rgba(238, 238, 238, 0.3);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @media screen and (max-width: 850px) {
+        margin: 0 6.25rem;
+      }
+
+      @media screen and (orientation: portrait) and (max-width: 850px) {
+        margin-top: 3rem;
+      }
+
+      @media screen and (orientation: landscape) and (max-width: 650px) {
+        font-size: 0.8rem;
+      }
+
+      @media screen and (orientation: portrait) and (max-width: 450px) {
+        margin: 0 2.25rem;
+      }
+
+      img {
+        width: 14vw;
+        height: 14vw;
+        border-radius: 50%;
+        border: 1px solid #eee;
+        margin: 1.875rem 0 0.625rem 0;
+
+        @media screen and (max-width: 850px) {
+          width: 24vw;
+          height: 24vw;
+        }
+
+        @media screen and (orientation: landscape) and (max-width: 750px) {
+          width: 16vw;
+          height: 16vw;
+        }
+
+        @media screen and (orientation: portrait) and (max-width: 450px) {
+          width: 30vw;
+          height: 30vw;
+        }
+
+      }
+
+      h2 {
+        border: 1px dashed #eee;
+        padding: 0.625rem 1.25rem;
+      }
+
+      span {
+        padding-bottom: 1.25rem;
+      }
+
+      button {
+        margin-bottom: 1.875rem;
+        padding: 0.625rem 0.9375rem;
+        background: #ba9698;
+        border: 1px solid #364a69;
+        cursor: pointer;
+
+        @media (min-width: 1450px){
+          font-size: 0.8rem;
+        }
+
+        @media screen and (orientation: landscape) and (max-width: 650px) {
+          font-size: 0.8rem;
+        }
+
+        &:hover {
+          background: darken(#ba9698, 5%);
+        }
+
+        a {
+          color: #364a69;
+        }
+      }
+    }
+
+    .myInfo {
+      position: relative;
+
+      @media screen and (max-width: 850px) {
+        display: none;
+      }
+
+      .aboutMe {
+        color: #364a69;
+
+        h3 {
+          border-bottom: 1px solid #364a69;
+          padding-bottom: 0.3125rem;
+          margin-bottom: 0;
+        }
+      }
+
+      .myContact {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        font-family: sans-serif;
+
+        i {
+          padding-right: 1.25rem;
+        }
+
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.title {
+  position: relative;
+
+  i {
+    font-size: 1.7rem;
+    position: absolute;
+    top: 0.3125rem;
+    left: -0.5625rem;
+  }
+
+  h2 {
+    border-bottom: 0.125rem solid #ccc;
+    padding-bottom: 0.625rem;
+    margin: 1.25rem 0 1.25rem 3.125rem;
+  }
+}
+
+.knowledge {
+  padding-top: 1.875rem;
+  font-family: RobotoLight;
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4.375rem;
+
+    @media screen and (max-width: 850px) {
+      grid-template-columns: 1fr;
+    }
+
+    .item {
+      position: relative;
+      padding-left: 3.125rem;
+
+      .time {
+        color: #364a69;
+      }
+
+      .progress {
+        background-color: #ddd;
+        height: 0.5rem;
+        position: relative;
+        display: block;
+        margin: 0.5rem 0 1rem 0;
+
+        span {
+          font-size: 0.875rem;
+          position: absolute;
+          color: #364a69;
+          top: -1.75rem;
+          right: 0;
+        }
+      }
+
+      .determinate {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        background: linear-gradient(90deg, #496e9b, #ba9698);
+      }
+    }
+  }
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .tech {
+    border: 0.125rem solid #d3d3d3;
+    box-shadow: 0 0 0.125rem #ccc;
+    padding: 0.3125rem 0.625rem;
+    margin: 0.3125rem;
+    background-color: #eee;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #dfdfdf;
+    }
+  }
+}
+
+.portfolio {
+  padding-top: 1.875rem;
+
+  .container {
+    .filterDiv {
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+      }
+      li {
+        display: inline-block;
+        margin: 0 0.625rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-family: RobotoRegular;
+        color: #888;
+        letter-spacing: 0.125rem;
+        padding-bottom: 0.3125rem;
+      }
+
+      li.active {
+        color: #b08789;
+        border-bottom: 1px solid #b08789;
+      }
+
+      ul {
+        margin-bottom: 1.25rem;
+      }
+    }
+
+    .items {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-left: 3.125rem;
+
+      .item {
+        position: relative;
+        overflow: hidden;
+        margin: 1.5rem 3rem 1.5rem 0;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        @media (min-width: 1051px) {
+          width: calc(33.33% - 2rem);
+
+          &:nth-child(3n) {
+            margin-right: 0;
+          }
+        }
+
+        @media (min-width: 500px) and (max-width: 1050px) {
+          width: calc(50% - 1.5rem);
+
+          &:nth-child(2n) {
+            margin-right: 0;
+          }
+        }
+
+        @media (max-width: 499px) {
+          width: 100%;
+          margin-right: 0;
+        }
+
+        .top {
+          height: 80%;
+          width: 100%;
+          overflow: hidden;
+          border: 0.0625rem solid #ccc;
+          box-sizing: border-box;
+          border-radius: 0.3125rem 0.3125rem 0 0;
+
+          &:hover {
+            .itemContent {
+              opacity: 1;
+              padding-top: 12%;
+              height: 68%;
+            }
+          }
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+
+        .button {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 20%;
+          border: 0.0625rem solid #ccc;
+          border-top: 0 !important;
+          box-sizing: border-box;
+          background: #eee;
+          transition: 0.3s linear;
+          display: flex;
+          border-radius: 0 0 0.3125rem 0.3125rem;
+          cursor: pointer;
+          font-family: RobotoRegular;
+          letter-spacing: 0.0625rem;
+
+          &:hover {
+            background: darken(#eee, 5%);
+
+            a {
+              color: #496e9b;
+            }
+          }
+
+          a {
+            text-transform: uppercase;
+            align-self: center;
+            font-weight: bold;
+            margin: 0 auto;
+            color: #ba9698;
+            transition: 0.3s linear;
+          }
+        }
+
+        .itemContent {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 75%;
+          padding-top: 5%;
+          background-color: rgba(0, 0, 0, 0.7);
+          text-align: center;
+          border-radius: 0.3125rem;
+          opacity: 0;
+          transition: 0.5s;
+          font-size: 0.9rem;
+
+          @media screen and (min-width: 1300px) and (max-width: 1899px){
+            font-size: 0.8rem;
+          }
+
+          @media screen and (orientation: portrait) and (min-width: 451px) and (max-width: 600px) {
+            font-size: 0.75rem;
+          }
+
+          @media screen and (orientation: portrait) and (min-width: 321px) and (max-width: 450px) {
+            font-size: 1.2rem;
+          }
+
+          @media screen and (orientation: landscape) and (min-width: 481px) and (max-width: 600px) {
+            font-size: 0.7rem;
+          }
+
+          @media screen and (orientation: landscape) and (max-width: 480px) {
+            font-size: 1.4rem;
+          }
+
+          h3 {
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 0.125rem;
+          }
+
+          a {
+            background-color: transparent;
+            border: 0.0625rem solid #ba9698;
+            padding: 0.3125rem 0.9375rem;
+            display: inline-block;
+            color: #ba9698;
+            cursor: pointer;
+            letter-spacing: 0.0625rem;
+            transition: 0.3s;
+
+            &:hover {
+              border: 0.0625rem solid darken(#ba9698, 5%);
+              color: darken(#ba9698, 5%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.description {
+  background-color: #f9f9f9;
+  max-width: 31.25rem;
+  margin: auto;
+  position: relative;
+
+  .modal-box-content {
+    position: relative;
+    text-align: center;
+  }
+
+  p, h3 {
+    padding: 1.25rem;
+    margin: 0 auto;
+  }
+
+  h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-top: 1.563rem;
+    padding-bottom: 0;
+  }
+
+  img {
+    width: 100%;
+    margin-top: 1.25rem;
+    vertical-align: middle;
+  }
+
+  .demoButton {
+    padding: 0.3125rem 1.25rem;
+    background: #cfa8aa;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border: 1px solid #ba9698;
+    cursor: pointer;
+    margin: 1.25rem auto 0 auto;
+    display: inline-block;
+
+    &:hover {
+      background: darken(#cfa8aa, 5%);
+      border-color: darken(#ba9698, 5%);
+    }
+
+    a {
+      color: #303030;
+    }
+  }
+}
+
+.contacts {
+  .container {
+    .contact {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 3.125rem;
+      padding-left: 3.125rem;
+      position: relative;
+
+      @media screen and (max-width: 850px) {
+        grid-template-columns: 1fr;
+      }
+
+      .myContact {
+        padding: 1.875rem 3.125rem 3.125rem 3.125rem;
+        background-color: #fff;
+        font-size: 1.1rem;
+
+        p {
+          i {
+            padding-right: 0.625rem;
+          }
+        }
+
+        h3 {
+          padding-bottom: 0.625rem;
+          border-bottom: 1px solid #ccc;
+        }
+        .links {
+          padding-top: 0.625rem;
+
+          a {
+            font-size: 1.3rem;
+            padding-right: 0.625rem;
+            cursor: pointer;
+            color: #ba9698;
+
+            &:hover {
+              color: #7ba4d8;
+            }
+          }
+        }
+      }
+
+      .map,
+      .myContact {
+        border: 1px solid #ccc;
+        box-shadow: 0 0 0.3125rem #ccc;
+      }
+
+      .iframe {
+        @media screen and (max-width: 850px) {
+          height: 300px;
+        }
+
+        @media (min-width: 1450px) {
+          height: 400px;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  height: 3.75rem;
+  text-align: center;
+
+  p {
+    padding-top: 1.25rem;
+    margin-top: 3.75rem;
+    border-top: 1px solid #ccc;
+  }
+}

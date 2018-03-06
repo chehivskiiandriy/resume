@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+<header class="header parallax-window" data-parallax="scroll" data-image-src="images/header__bg.jpg" style="height: 80vh">
+    <div class="container">
+        <div class="myPhoto">
+            <img src="images/my__photo.jpg" alt="">
+            <h2>Andriy Chehivskii</h2>
+            <span>Front-End Developer</span>
+            <button>
+                <a href="resume.pdf" target="_blank">
+                    <i class="fa fa-download" aria-hidden="true"></i> Download my CV
+                </a>
+            </button>
+        </div>
+        <div class="myInfo">
+            <div class="aboutMe">
+                <h3>Hello, I'm Chehivskii Andriy</h3>
+                <p>
+                    I'm a student of Kiev Polytechnic Institute. I learn Computer Science there.
+                    Also I have experience in web development!
+                </p>
+            </div>
+            <div class="myContact">
+                <p><i class="fa fa-user-o" aria-hidden="true"></i>07.12.1997</p>
+                <p><i class="fa fa-home" aria-hidden="true"></i>Ukraine, Kiev</p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i>+38 (098) 039 17 48</p>
+                <p><i class="fa fa-envelope-o" aria-hidden="true"></i>andriy07121997@ukr.net</p>
+                <p><i class="fa fa-github" aria-hidden="true"></i>
+                    <a href="https://github.com/chehivskiiandriy" target="_blank">chehivskiiandriy</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="knowledge">
+    <div class="container">
+        <div class="education">
+            <div class="title">
+                <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                <h2>Education</h2>
+            </div>
+            <div class="item ownBorder">
+                <h3>National Technical University of Ukraine 'Igor Sikorsky Kyiv Polytechnic Institute'</h3>
+                <span class="time">2015 - Current</span>
+                <p>After graduated from high school I entered the KPI. Nowadays I learn programming  there.</p>
+            </div>
+            <div class="item ownBorder">
+                <h3>Native English School</h3>
+                <span class="time">FEB 2017 - Current</span>
+                <p>English is very important for me and my career. So I attend English courses to improve my level of
+                    English.</p>
+            </div>
+        </div>
+        <div class="skills">
+            <div class="title">
+                <i class="fa fa-code" aria-hidden="true"></i>
+                <h2>Proffesional Skills</h2>
+            </div>
+            <div class="item ownBorder">
+                <span>HTML/CSS</span>
+                <div class="progress">
+                    <div class="determinate" style="width: 90%;"></div>
+                    <span>90%</span>
+                </div>
+                <span>Javascript</span>
+                <div class="progress">
+                    <div class="determinate" style="width: 85%;"></div>
+                    <span>85%</span>
+                </div>
+                <span>React/Redux</span>
+                <div class="progress">
+                    <div class="determinate" style="width: 83%;"></div>
+                    <span>83%</span>
+                </div>
+                <span>Angular 2+</span>
+                <div class="progress">
+                    <div class="determinate" style="width: 80%;"></div>
+                    <span>80%</span>
+                </div>
+            </div>
+            <div class="item ownBorder">
+                <h3>Also I use such technologies:</h3>
+                <div class="technologies">
+                    <div class="tech"><span>ES6</span></div>
+                    <div class="tech"><span>Node.js</span></div>
+                    <div class="tech"><span>Bootstrap</span></div>
+                    <div class="tech"><span>Semantic UI</span></div>
+                    <div class="tech"><span>BEM</span></div>
+                    <div class="tech"><span>Sass</span></div>
+                    <div class="tech"><span>Pug</span></div>
+                    <div class="tech"><span>jQuery</span></div>
+                    <div class="tech"><span>REST API</span></div>
+                    <div class="tech"><span>MongoDB</span></div>
+                    <div class="tech"><span>MySQL</span></div>
+                    <div class="tech"><span>Webpack</span></div>
+                    <div class="tech"><span>Gulp</span></div>
+                    <div class="tech"><span>Git</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="portfolio">
+    <div class="container">
+        <div class="title">
+            <i class="fa fa-briefcase" aria-hidden="true"></i>
+            <h2>Portfolio</h2>
+        </div>
+        <div class="filterDiv controls">
+            <ul>
+                <li class="control active" data-filter="all">All works</li>
+                <li class="control" data-filter=".category-1">Site</li>
+                <li class="control" data-filter=".category-2">Angular</li>
+                <li class="control" data-filter=".category-3">React</li>
+            </ul>
+        </div>
+        <div class="items portfolioItems ownBorder">
+            <div class="item mix category-1">
+                <div class="top">
+                    <img src="images/bakery.jpg" alt="">
+                    <div class="itemContent">
+                        <h3>Bakery website</h3>
+                        <a href="" class="popupContent">Description</a>
+                    </div>
+                </div>
+                <div class="button">
+                    <a href="content/bakery/index.html" target="_blank">Demo</a>
+                </div>
+                <div class="hidden">
+                    <div class="description">
+                        <div class="modal-box-content">
+                            <button class="mfp-close" type="button" title="Close (Esc)">×</button>
+                            <h3>Bakery website</h3>
+                            <p>This is a landing page about bakery includes two sliders, hamburger menu.</p>
+                            <div class="technologies">
+                                <div class="tech"><span>JS</span></div>
+                                <div class="tech"><span>Pug</span></div>
+                                <div class="tech"><span>Scss</span></div>
+                                <div class="tech"><span>JQuery</span></div>
+                                <div class="tech"><span>Gulp</span></div>
+                            </div>
+                            <button class="demoButton">
+                                <a href="content/bakery/index.html" target="_blank">Demo</a>
+                            </button>
+                            <img src="images/bakery.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item mix category-3">
+                <div class="top">
+                    <img src="images/recipes.jpg" alt="">
+                    <div class="itemContent">
+                        <h3>Recipes website</h3>
+                        <a href="" class="popupContent">Description</a>
+                    </div>
+                </div>
+                <div class="button">
+                    <a href="https://simplerecipesapp.herokuapp.com/" target="_blank">Demo</a>
+                </div>
+                <div class="hidden">
+                    <div class="description">
+                        <div class="modal-box-content">
+                            <button class="mfp-close" type="button" title="Close (Esc)">×</button>
+                            <h3>Recipes website</h3>
+                            <p>This site about recipes. You can filter, sort, like, add, edit, delete recipes.</p>
+                            <div class="technologies">
+                                <div class="tech"><span>React</span></div>
+                                <div class="tech"><span>Redux</span></div>
+                                <div class="tech"><span>Node.js</span></div>
+                                <div class="tech"><span>Express</span></div>
+                                <div class="tech"><span>MongoDB</span></div>
+                            </div>
+                            <button class="demoButton">
+                                <a href="https://simplerecipesapp.herokuapp.com/" target="_blank">Demo</a>
+                            </button>
+                            <img src="images/recipes.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item mix category-1">
+                <div class="top">
+                    <img src="images/snapfixx.jpg" alt="">
+                    <div class="itemContent">
+                        <h3>Snapfixx website</h3>
+                        <a href="" class="popupContent">Description</a>
+                    </div>
+                </div>
+                <div class="button">
+                    <a href="content/snapfixx/index.html" target="_blank">Demo</a>
+                </div>
+                <div class="hidden">
+                    <div class="description">
+                        <div class="modal-box-content">
+                            <button class="mfp-close" type="button" title="Close (Esc)">×</button>
+                            <h3>Snapfixx website</h3>
+                            <p>This is a simple landing page that includes slider, navigation, scroll to.</p>
+                            <div class="technologies">
+                                <div class="tech"><span>JS</span></div>
+                                <div class="tech"><span>Pug</span></div>
+                                <div class="tech"><span>Scss</span></div>
+                                <div class="tech"><span>JQuery</span></div>
+                                <div class="tech"><span>Gulp</span></div>
+                            </div>
+                            <button class="demoButton">
+                                <a href="content/snapfixx/index.html" target="_blank">Demo</a>
+                            </button>
+                            <img src="images/snapfixx.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item mix category-2">
+                <div class="top">
+                    <img src="images/time_worked.jpg" alt="">
+                    <div class="itemContent">
+                        <h3>Accounting project</h3>
+                        <a href="" class="popupContent">Description</a>
+                    </div>
+                </div>
+                <div class="button">
+                    <a href="https://github.com/chehivskiiandriy/Accounting-of-time-worked" target="_blank">Github</a>
+                </div>
+                <div class="hidden">
+                    <div class="description">
+                        <div class="modal-box-content">
+                            <button class="mfp-close" type="button" title="Close (Esc)">×</button>
+                            <h3>Заголовок работы</h3>
+                            <p>This project about accounting of time worked consist two parts. The first part includes
+                                statistic, report. The second part consists of admin page where admin can fill in
+                                information about employees(working days, holidays, business trip, etc.).
+                                Also are pagination, filtering, sorting.</p>
+                            <div class="technologies">
+                                <div class="tech"><span>Angular 4</span></div>
+                                <div class="tech"><span>Node.js</span></div>
+                                <div class="tech"><span>Express</span></div>
+                                <div class="tech"><span>MySQL</span></div>
+                                <div class="tech"><span>Moment.js</span></div>
+                            </div>
+                            <button class="demoButton">
+                                <a href="https://github.com/chehivskiiandriy/Accounting-of-time-worked" target="_blank">Github</a>
+                            </button>
+                            <img src="images/time_worked.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contacts">
+    <div class="container">
+        <div class="title">
+            <i class="fa fa-address-card-o" aria-hidden="true"></i>
+            <h2>Contacts</h2>
+        </div>
+        <div class="contact ownBorder">
+            <div class="myContact">
+                <h3>I am open to conversations, requests and suggestions!</h3>
+                <p><i class="fa fa-home" aria-hidden="true"></i> Ukraine, Kiev</p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i> +38 (098) 039 17 48</p>
+                <p><i class="fa fa-envelope-o" aria-hidden="true"></i> andriy07121997@ukr.net</p>
+                <div class="links">
+                    <a href="https://github.com/chehivskiiandriy" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/andriy-chehivskii-353a01155/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    <a href="https://web.telegram.org/#/im?p=u777000_2894056607989887792" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+                    <a href="https://vk.com/id136437317" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="map">
+                <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10163.022860922332!2d30.448042469910924!3d50.44565068837281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc2725e0a84b%3A0x5dc9a6a77e162170!2z0YPQuy4g0JHQvtGA0YnQsNCz0L7QstGB0LrQsNGPLCAxNDQsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1518334885191" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>Copyright © Chehivskii Andriy. All Rights Reserved.</p>
+    </div>
+</footer>
+<script src="js/main.min.js"></script>
+</body>
+</html>

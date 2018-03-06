@@ -1,0 +1,33 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.2.6",
+    "browser-sync": "^2.23.6",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-cache": "^1.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "imagemin-pngquant": "^5.0.1",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "jquery-parallax.js": "^1.5.0",
+    "magnific-popup": "^1.1.0",
+    "mixitup": "^3.2.2"
+  }
+}
